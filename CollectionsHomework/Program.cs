@@ -70,14 +70,17 @@ namespace CollectionsHomework
 
             List<int> List01 = new List<int>();
             int listIndex = 0;
+            int totalSum = 0;
+
             foreach (int arrayValue in cubicArray)
             {
                 List01.Add(arrayValue);
+                totalSum += List01[listIndex];
                 Console.WriteLine(List01[listIndex]);
                 listIndex++;
             }
             
-
+            Console.WriteLine("Total Sum: " + totalSum);
         }
     }
 }
