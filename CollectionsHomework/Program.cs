@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 /*
 
-Lab 2 : List
 
-Create a one-dimensional list of integers called List01.
-
-Iterate over the three dimensional array above, and for every number in the array, add it to the list.
-
-Finally add up the total sum of all numbers in the list and output the result.
 
 Lab 3 : Dictionary
 
@@ -67,6 +61,22 @@ namespace CollectionsHomework
             }
 
             Console.WriteLine(String.Format("(2,3,7) : {0}", cubicArray[1,2,6]));
+
+            /* Lab 2 : List
+             * Create a one-dimensional list of integers called List01.
+             * Iterate over the three dimensional array above, and for every number in the array, add it to the list.
+             * Finally add up the total sum of all numbers in the list and output the result.
+             */
+
+            List<int> List01 = new List<int>();
+            int listIndex = 0;
+            foreach (int arrayValue in cubicArray)
+            {
+                List01.Add(arrayValue);
+                Console.WriteLine(List01[listIndex]);
+                listIndex++;
+            }
+            
 
         }
     }
