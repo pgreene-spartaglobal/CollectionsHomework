@@ -6,23 +6,6 @@ using System.Threading.Tasks;
 
 /*
 
-
-
-
-
-Lab 4 : Queue
-
-Count from 1 to 100 and add the cubes of each number to a queue.
-
-Run dequeue 10 times and sum the output
-
-Return this sum.
-
-Lab 5 : Stack
-
-Repeat this for a stack ie count from 1 to 100, add the cube of each number to the stack, then pop 10 items off the top of the stack and sum the output of those 10 numbers.
-
-Return this sum
 */
 
 namespace CollectionsHomework
@@ -49,12 +32,12 @@ namespace CollectionsHomework
                     for (int z = 0; z < cubicArray.GetLength(2); z++)
                     {
                         cubicArray[x, y, z] = (x + 1) * (y + 1) * (z + 1); // + 1 is added to the index to begin counting from 1 instead of 0
-                        Console.WriteLine(String.Format("cubicArray[{0}, {1}, {2}] | ({3},{4},{5}) | {6}", x, y, z, x+1,y+1,z+1, cubicArray[x, y, z]));
+                        //Console.WriteLine(String.Format("cubicArray[{0}, {1}, {2}] | ({3},{4},{5}) | {6}", x, y, z, x+1,y+1,z+1, cubicArray[x, y, z]));
                     }
                 }
             }
 
-            Console.WriteLine(String.Format("(2,3,7) : {0}", cubicArray[1,2,6]));
+            //Console.WriteLine(String.Format("(2,3,7) : {0}", cubicArray[1,2,6]));
 
             /* Lab 2 : List
              * Create a one-dimensional list of integers called List01.
@@ -70,11 +53,11 @@ namespace CollectionsHomework
             {
                 List01.Add(arrayValue);
                 totalSum += List01[listIndex];
-                Console.WriteLine(List01[listIndex]);
+                //Console.WriteLine(List01[listIndex]);
                 listIndex++;
             }
             
-            Console.WriteLine("Total Sum: " + totalSum);
+            //Console.WriteLine("Total Sum: " + totalSum);
 
             /* Lab 3 : Dictionary
              * Create a dictionary of 10 countries as the index, with the capital city as the data.
@@ -94,6 +77,23 @@ namespace CollectionsHomework
                 {"India", "New Delhi"},
                 {"Italy", "Rome"}
             };
+
+            foreach (var pair in countryCapital)
+            {
+                Console.WriteLine("{0}, {1}", pair.Key, pair.Value);
+            }
+
+            /* Lab 4 : Queue
+             * Count from 1 to 100 and add the cubes of each number to a queue.
+             * Run dequeue 10 times and sum the output
+             * Return this sum.
+             */
+
+            /* Lab 5 : Stack
+             * Repeat this for a stack ie count from 1 to 100, add the cube of each number to the stack, then pop 10 items off the top of the stack and sum the output of those 10 numbers.
+             *  Return this sum        
+             */
+
         }
     }
 }
