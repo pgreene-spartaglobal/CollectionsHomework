@@ -37,3 +37,18 @@ Lab 5 : Stack
 Repeat this for a stack ie count from 1 to 100, add the cube of each number to the stack, then pop 10 items off the top of the stack and sum the output of those 10 numbers.
 
 Return this sum
+
+## Implementation
+Lab 1: To populate the cubic array three nested for loops were used.
+
+Since arrays begin counting from index zero a +1 was used to have the array begin counting from a value of 1.
+
+Lab 2: A for each was used to populate the list, iterating through each value in the array. During each iteration the current array value was added to the sum.
+
+Lab 3: Declared and populated a dictionary called countryCapital and used a for each loop to write each pair value to console
+
+Lab 4: Declared a queue called cubeQueue and used a for loop counting from 1 to 100 to add the product to the queue.
+
+10 values were dequeued using a for loop and totaled to calculate the sum.
+
+Lab 5: Declared a stack called cubeStack and repeated the same steps as Lab 4 but instead using Push to add values to the stack and Pop to remove values.
