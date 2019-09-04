@@ -64,6 +64,7 @@ namespace CollectionsHomework
              * Iterate over the data and display it.
              * Return the completed dictionary to complete the test
              */
+
             Dictionary<string, string> countryCapital = new Dictionary<string, string>()
             {
                 {"United Kingdom", "London"},
@@ -80,7 +81,7 @@ namespace CollectionsHomework
 
             foreach (var pair in countryCapital)
             {
-                Console.WriteLine("{0}, {1}", pair.Key, pair.Value);
+                //Console.WriteLine("{0}, {1}", pair.Key, pair.Value);
             }
 
             /* Lab 4 : Queue
@@ -88,6 +89,13 @@ namespace CollectionsHomework
              * Run dequeue 10 times and sum the output
              * Return this sum.
              */
+
+            Queue<int> cubeQueue = new Queue<int>();
+            for (int i = 1; i <= 100; i++)
+            {
+                cubeQueue.Enqueue((int)Math.Pow(i, 3));
+                Console.WriteLine(String.Format("{0}^3 = {1}", i, (int)Math.Pow(i, 3)));
+            }
 
             /* Lab 5 : Stack
              * Repeat this for a stack ie count from 1 to 100, add the cube of each number to the stack, then pop 10 items off the top of the stack and sum the output of those 10 numbers.
