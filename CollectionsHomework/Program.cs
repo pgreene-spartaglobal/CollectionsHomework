@@ -8,13 +8,7 @@ using System.Threading.Tasks;
 
 
 
-Lab 3 : Dictionary
 
-Create a dictionary of 10 countries as the index, with the capital city as the data.
-
-Iterate over the data and display it.
-
-Return the completed dictionary to complete the test
 
 Lab 4 : Queue
 
@@ -81,6 +75,25 @@ namespace CollectionsHomework
             }
             
             Console.WriteLine("Total Sum: " + totalSum);
+
+            /* Lab 3 : Dictionary
+             * Create a dictionary of 10 countries as the index, with the capital city as the data.
+             * Iterate over the data and display it.
+             * Return the completed dictionary to complete the test
+             */
+            Dictionary<string, string> countryCapital = new Dictionary<string, string>()
+            {
+                {"United Kingdom", "London"},
+                {"United States", "Washington D.C."},
+                {"France", "Paris"},
+                {"Germany", "Berlin"},
+                {"China", "Beijing"},
+                {"Japan", "Tokyo"},
+                {"Russia", "Moscow"},
+                {"Australia", "Canberra"},
+                {"India", "New Delhi"},
+                {"Italy", "Rome"}
+            };
         }
     }
 }
