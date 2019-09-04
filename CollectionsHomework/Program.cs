@@ -91,7 +91,7 @@ namespace CollectionsHomework
              */
 
             Queue<int> cubeQueue = new Queue<int>();
-            int cubeSum = 0;
+            int cubeSumQueue = 0;
             for (int i = 1; i <= 100; i++)
             {
                 cubeQueue.Enqueue((int)Math.Pow(i, 3));
@@ -100,15 +100,29 @@ namespace CollectionsHomework
 
             for (int j = 0; j < 10; j++)
             {
-                cubeSum += cubeQueue.Dequeue();
+                cubeSumQueue += cubeQueue.Dequeue();
             }
 
-            Console.WriteLine("cubeSum: " + cubeSum);
+            Console.WriteLine("cubeSumQueue: " + cubeSumQueue);
 
             /* Lab 5 : Stack
              * Repeat this for a stack ie count from 1 to 100, add the cube of each number to the stack, then pop 10 items off the top of the stack and sum the output of those 10 numbers.
              *  Return this sum        
              */
+            Stack<int> cubeStack = new Stack<int>();
+            int cubeSumStack = 0;
+            for (int i = 1; i <= 100; i++)
+            {
+                cubeStack.Push((int)Math.Pow(i, 3));
+                Console.WriteLine(String.Format("{0}^3 = {1}", i, (int)Math.Pow(i, 3)));
+            }
+
+            for (int j = 0; j < 10; j++)
+            {
+                cubeSumStack += cubeStack.Pop();
+            }
+
+            Console.WriteLine("cubeSumStack: " + cubeSumStack);
 
         }
     }
