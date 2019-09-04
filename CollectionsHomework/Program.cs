@@ -4,20 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
-
-*/
-
 namespace CollectionsHomework
 {
     class Program
     {
         static void Main(string[] args)
         {
-            CubicArrayLab();
-            CountryCapitalDictionaryLab();
-            CubeQueueLab();
-            CubeStackLab();
+            Console.WriteLine("Philip Greene - pgreene@spartaglobal.com\nCollections Homework");
+
+            // Loop labs
+            bool exit = false;
+            while (!exit)
+            {
+                Console.WriteLine("\nPlease select which lab you would like to run\n1. CubicArrayLab\n2. CountryCapitalDictionaryLab\n3. CubeQueueLab\n4. CubeStackLab\n5. Exit");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        CubicArrayLab();
+                        break;
+                    case 2:
+                        CountryCapitalDictionaryLab();
+                        break;
+                    case 3:
+                        CubeQueueLab();
+                        break;
+                    case 4:
+                        CubeStackLab();
+                        break;
+                    case 5:
+                        exit = true;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid option - Please try again\n");
+                        break;
+                }
+            }
+            Console.ReadLine();
         }
 
         static void CubicArrayLab()
@@ -61,7 +84,7 @@ namespace CollectionsHomework
             {
                 List01.Add(arrayValue);
                 totalSum += List01[listIndex];
-                Console.WriteLine(List01[listIndex]);
+                //Console.WriteLine(List01[listIndex]);
                 listIndex++;
             }
 
